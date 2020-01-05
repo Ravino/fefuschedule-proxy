@@ -1,0 +1,15 @@
+version: "3.5"
+
+services:
+
+  fefuschedule-proxy:
+    image: nginx
+    container_name: fefuschedule-proxy
+    restart: unless-stopped
+    networks:
+      - fefuschedule-proxy
+
+
+networks:
+  fefuschedule-proxy:
+    name: fefuschedule-proxy
